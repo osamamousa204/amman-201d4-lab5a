@@ -154,12 +154,11 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
     var sArrayMul = 1;
-    for(var i = 0;i<testArray.length;i++){
+    for(var i = 0;i<testDynamicArray.length;i++){
       
         sArrayMul =  multiply(sArrayMul,testDynamicArray[i])[0];
      }
   
-    
     
   var marrayMul = `The numbers ${testDynamicArray[0]},${testDynamicArray[1]},${testDynamicArray[2]},${testDynamicArray[3]},${testDynamicArray[4]} have a product of ${sArrayMul}.`
   return [sArrayMul,marrayMul]
